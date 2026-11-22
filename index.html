@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="إشارة - منصة تعليمية مرئية لتعلم أساسيات لغة الإشارة المصرية.">
+  <title>إشارة | تعلّم بلغة بصرية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+    :root{--ink:#18233b;--muted:#69758d;--blue:#4263eb;--blue-dark:#304bd0;--pale:#f4f6ff;--line:#e7eaf2;--white:#fff;--mint:#dff6ef;--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Cairo',sans-serif;color:var(--ink);background:#fff;line-height:1.7}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}.section-wrap{width:min(1140px,calc(100% - 48px));margin-inline:auto}.site-header{height:84px;padding:0 max(24px,calc((100% - 1140px)/2));display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #f0f1f6;background:#fff;position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:10px;font-size:23px;font-weight:800;letter-spacing:-.5px}.brand-mark{width:38px;height:38px;display:grid;place-items:center;background:var(--blue);color:#fff;border-radius:13px;font-size:22px}.brand-dot{color:var(--blue)}.main-nav{display:flex;gap:18px;flex-wrap:wrap}.nav-link{font-size:13.5px;color:#68738a;font-weight:600}.nav-link:hover,.nav-link.active{color:var(--blue)}.header-actions{display:flex;align-items:center;gap:9px}.icon-button{height:38px;min-width:38px;border:1px solid var(--line);background:#fff;border-radius:11px;color:var(--ink);font-weight:700}.header-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:12px;font-weight:700}.header-cta{background:var(--blue);color:#fff;padding:10px 17px;font-size:13px}.menu-toggle{display:none;background:none;border:0;font-size:24px}.hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding-block:82px 66px;min-height:520px}.eyebrow{font-size:12px;font-weight:800;color:var(--blue);display:inline-flex;align-items:center;gap:8px;letter-spacing:.2px}.eyebrow-dot{width:7px;height:7px;border-radius:50%;background:#48c5a0}.hero h1{font-size:clamp(42px,5.4vw,66px);line-height:1.22;letter-spacing:-2px;margin:17px 0}.hero h1 span{color:var(--blue)}.hero-lead{max-width:540px;color:var(--muted);font-size:16px;line-height:2}.hero-actions{display:flex;gap:12px;margin-top:27px;flex-wrap:wrap}.button{padding:12px 21px;font-size:14px}.button-primary{background:var(--blue);color:#fff;box-shadow:0 8px 18px #4263eb30}.button-primary:hover,.header-cta:hover{background:var(--blue-dark)}.button-quiet{color:#536079;background:#f4f6fb}.hero-proof{display:flex;align-items:center;gap:12px;margin-top:40px}.proof-icon{width:43px;height:43px;display:grid;place-items:center;background:#edf0ff;border-radius:14px;font-size:22px}.hero-proof strong,.hero-proof small{display:block}.hero-proof strong{font-size:13px}.hero-proof small{color:var(--muted);font-size:11px}.hero-art{height:360px;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 50% 48%,#e8ecff 0,#f4f5ff 45%,#fff 72%);border-radius:48% 52% 46% 54%}.hand-illustration{font-size:150px;filter:drop-shadow(0 18px 18px #5365a522);transform:rotate(-12deg);z-index:2}.art-orbit{position:absolute;border:1px dashed #aebaf8;border-radius:50%;width:270px;height:270px}.orbit-two{width:330px;height:330px;border-color:#d4dafa}.art-card{position:absolute;z-index:3;background:#fff;border:1px solid #edf0fa;box-shadow:0 12px 35px #35457b16;border-radius:15px;padding:10px 15px;display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700}.art-card-top{top:55px;right:20px}.art-card-bottom{bottom:48px;left:16px}.mini-symbol{width:30px;height:30px;background:#f0f2ff;color:var(--blue);border-radius:9px;display:grid;place-items:center;font-size:16px}.spark{position:absolute;color:#f5b84b;font-size:25px}.spark-one{top:55px;left:75px}.spark-two{bottom:75px;right:55px;color:#5bc5a5}.stats{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 0;border-block:1px solid var(--line)}.stat{padding-inline:25px;border-left:1px solid var(--line)}.stat:last-child{border:0}.stat strong,.stat span{display:block}.stat strong{font-size:19px;color:var(--blue)}.stat span{font-size:12px;color:var(--muted)}.lessons-section{padding-block:85px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}.section-heading h2,.about-section h2{font-size:34px;line-height:1.35;margin:8px 0}.section-heading p,.about-section p{color:var(--muted);margin:0;font-size:14px}.search-box{display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:12px;padding:8px 13px;width:245px;color:#8b95aa}.search-box input{border:0;outline:0;width:100%;font-size:12px;color:var(--ink)}.filter-row{display:flex;gap:9px;margin:30px 0 20px;flex-wrap:wrap}.filter-chip{border:1px solid var(--line);background:#fff;color:#68738a;padding:7px 17px;border-radius:30px;font-size:12px}.filter-chip.selected{background:#edf0ff;color:var(--blue);border-color:#dce2ff;font-weight:700}.lesson-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.lesson-card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:.2s}.lesson-card:hover{transform:translateY(-4px);box-shadow:0 14px 35px #25335b10}.lesson-visual{height:175px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}.visual-lilac{background:#eeedff}.visual-peach{background:#fff0e8}.visual-mint{background:#e5f7f1}.visual-sky{background:#eaf3ff}.visual-rose{background:#fff0f5}.visual-tag{position:absolute;top:15px;right:15px;background:#ffffffc9;padding:4px 10px;border-radius:30px;font-size:10px;font-weight:700;color:#58627a}.visual-letter{font-size:33px;font-weight:800;color:#3449b8;letter-spacing:3px}.visual-hand{position:absolute;left:24px;bottom:12px;font-size:52px;opacity:.85}.lesson-info{padding:18px}.lesson-meta{font-size:10px;color:#8a94a9}.lesson-info h3{font-size:18px;margin:5px 0}.lesson-info p{font-size:12px;color:var(--muted);min-height:42px;margin:0 0 14px}.text-link{border:0;background:none;color:var(--blue);font-weight:800;font-size:12px;padding:0}.text-link span{margin-right:6px}.empty-state{text-align:center;color:var(--muted);padding:25px}.practice-band{background:#202d55;color:#fff;padding:70px 0;overflow:hidden;position:relative}.practice-band:before{content:"";position:absolute;width:440px;height:440px;border:1px solid #ffffff13;border-radius:50%;left:-130px;top:-210px}.practice-inner{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:70px;position:relative}.eyebrow-light{color:#aebdff}.practice-inner h2{font-size:38px;line-height:1.35;margin:12px 0}.practice-inner>div:first-child p{color:#c1c9dc;font-size:14px}.quiz-meta-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;font-size:11px;color:#78849c;font-weight:700}.quiz-card{background:#fff;color:var(--ink);border-radius:20px;padding:25px;box-shadow:0 20px 50px #101a382f}.quiz-top{display:flex;justify-content:space-between;color:var(--blue);font-size:11px;font-weight:800}.quiz-count{color:#8993a7}.quiz-card h3{font-size:17px;line-height:1.7;margin:17px 0}.quiz-options{display:grid;gap:9px}.quiz-option{border:1px solid var(--line);background:#fff;text-align:right;border-radius:11px;padding:10px 13px;font-size:12px;color:#4e5a72}.quiz-option:hover{border-color:#9eabf4;background:#f8f9ff}.quiz-option.correct{border-color:#42b58e;background:#effbf6;color:#167b5b}.quiz-option.wrong{border-color:#e58b8b;background:#fff5f5;color:#a33d3d}.quiz-option:disabled{cursor:default}.quiz-feedback{font-size:12px;font-weight:700;min-height:20px;margin:10px 0 0}.quiz-actions{display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap}.quiz-next{border:0;background:var(--blue);color:white;border-radius:9px;padding:8px 14px;font-size:12px;font-weight:700}.quiz-reset{border:1px solid var(--line);background:#f7f8fc;color:#4e5a72;border-radius:9px;padding:8px 12px;font-size:12px;font-weight:700}.about-section{display:grid;grid-template-columns:180px 1fr;gap:45px;align-items:center;padding-block:80px}.about-mark{width:150px;height:150px;border-radius:40px;background:linear-gradient(145deg,#4263eb,#7889f4);color:#fff;display:grid;place-items:center;font-size:90px;font-weight:800;box-shadow:15px 15px 0 #edf0ff}.about-section p{max-width:760px;line-height:2;margin-top:9px}.about-section .important-note{background:#f7f8fc;border-right:3px solid #f0b64d;padding:10px 14px;border-radius:8px;font-size:12px;margin-top:17px}.site-footer{border-top:1px solid var(--line);padding:25px max(24px,calc((100% - 1140px)/2));display:flex;align-items:center;justify-content:space-between;gap:15px}.footer-brand{font-size:18px}.footer-brand .brand-mark{width:30px;height:30px;font-size:17px}.site-footer p,.site-footer>span{font-size:11px;color:var(--muted)}.skip-link{position:absolute;top:-60px;right:10px;background:#fff;padding:10px;z-index:20}.skip-link:focus{top:10px}.lesson-dialog{border:0;border-radius:20px;padding:26px;width:min(560px,calc(100% - 30px));box-shadow:0 20px 80px #101a3850}.lesson-dialog::backdrop{background:#17213d99}.dialog-head{display:flex;justify-content:space-between;align-items:center}.dialog-close{border:0;background:#f1f3f9;border-radius:50%;width:34px;height:34px;font-size:22px}.dialog-title{font-size:25px;margin:10px 0}.dialog-copy{color:var(--muted);font-size:13px;line-height:2}.media-placeholder{margin:17px 0;background:#f0f2ff;border:1px dashed #aebaf8;border-radius:15px;padding:24px;text-align:center;color:#4258c6}.media-placeholder strong{display:block;font-size:32px}.media-placeholder span{font-size:12px;display:block;margin-top:7px}.media-link-box{margin-top:10px;font-size:11px;color:#304bd0;background:#fff;border:1px solid #d9e0ff;border-radius:9px;padding:7px 11px;display:inline-block;word-break:break-all}.dialog-tip{font-size:12px;background:#f7f8fc;padding:12px;border-radius:10px;color:#58647c}
+    body.large-text{font-size:1.12em}body.high-contrast{--ink:#000;--muted:#252525;--blue:#0039c7;--line:#777}body.high-contrast .hero-art,body.high-contrast .lesson-visual{filter:contrast(1.15)}
+    @media(max-width:850px){.main-nav{gap:12px}.hero{gap:15px}.hero-art{height:300px}.hand-illustration{font-size:120px}.lesson-grid{gap:12px}.lesson-info{padding:14px}}
+    @media(max-width:680px){.site-header{height:70px}.main-nav{display:none;position:absolute;top:70px;right:0;left:0;background:#fff;padding:18px 24px;box-shadow:0 12px 20px #15234a12;flex-direction:column}.main-nav.open{display:flex}.header-actions{margin-right:auto;margin-left:12px}.header-cta{display:none}.menu-toggle{display:block}.hero{grid-template-columns:1fr;padding-block:50px 35px}.hero h1{font-size:46px}.hero-art{height:270px;grid-row:1}.art-orbit{width:220px;height:220px}.orbit-two{width:270px;height:270px}.hand-illustration{font-size:110px}.stats{gap:10px}.stat{padding-inline:10px}.stat strong{font-size:16px}.stat span{font-size:10px}.lessons-section{padding-block:55px}.section-heading{align-items:stretch;flex-direction:column}.section-heading h2,.about-section h2{font-size:28px}.search-box{width:100%}.lesson-grid{grid-template-columns:1fr}.lesson-visual{height:155px}.practice-inner{grid-template-columns:1fr;gap:25px}.practice-inner h2{font-size:32px}.about-section{grid-template-columns:1fr;gap:30px;padding-block:55px}.about-mark{width:95px;height:95px;font-size:55px;border-radius:27px}.site-footer{flex-wrap:wrap}.site-footer p{order:3;width:100%;margin:0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+    /* Educational tips, quick phrase bank, learning path, project team (5 members) & evaluation matrix */
+    .quick-guide{padding-block:15px 65px}
+    .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .guide-card{position:relative;border:1px solid var(--line);border-radius:18px;padding:23px;background:#fff;min-height:205px}
+    .guide-number{position:absolute;top:17px;left:18px;color:#aab3c7;font-size:11px;font-weight:800}
+    .guide-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#eff1ff;font-size:24px;margin-bottom:14px}
+    .guide-card:nth-child(2) .guide-icon{background:#fff0e8}
+    .guide-card:nth-child(3) .guide-icon{background:#e5f7f1}
+    .guide-card h3{font-size:16px;margin:0 0 7px}
+    .guide-card p{font-size:12px;color:var(--muted);line-height:1.9;margin:0}
+    .fact-strip{display:flex;align-items:center;gap:13px;margin-top:18px;padding:14px 18px;background:#f5f7ff;border-radius:13px}
+    .fact-symbol{color:var(--blue);font-size:22px}
+    .fact-strip p{font-size:12px;color:#58647c;margin:0}
+
+    .phrases-section{padding-block:20px 75px}
+    .phrase-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px}
+    .phrase-card{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:12px;transition:.2s}
+    .phrase-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #25335b0f}
+    .phrase-top{display:flex;justify-content:space-between;align-items:center}
+    .phrase-emoji{width:42px;height:42px;border-radius:12px;background:#f4f6ff;display:grid;place-items:center;font-size:20px}
+    .phrase-tag{font-size:10px;font-weight:700;color:var(--blue);background:#edf0ff;padding:4px 10px;border-radius:30px}
+    .phrase-card h3{font-size:16px;margin:0}
+    .phrase-card p{font-size:12px;color:var(--muted);margin:0;line-height:1.8}
+
+    .path-section{padding-block:10px 75px}
+    .path-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+    .path-step{border:1px solid var(--line);background:#fafbff;border-radius:18px;padding:20px}
+    .path-badge{display:inline-block;background:var(--blue);color:#fff;font-size:11px;font-weight:800;padding:3px 11px;border-radius:30px;margin-bottom:10px}
+    .path-step h3{font-size:16px;margin:0 0 6px}
+    .path-step p{font-size:12px;color:var(--muted);margin:0;line-height:1.85}
+
+    .team-section{background:#f7f8fc;padding-block:70px}
+    .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:26px}
+    .team-member{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center;transition:.2s;display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+    .team-member:hover{transform:translateY(-3px);box-shadow:0 12px 26px #25335b0e}
+    .team-avatar{width:52px;height:52px;border-radius:16px;background:linear-gradient(145deg,#4263eb,#7889f4);color:#fff;font-size:21px;font-weight:800;display:grid;place-items:center;margin:0 auto 10px}
+    .team-member h3{font-size:15px;margin:0 0 6px}
+    .team-role-pill{display:inline-block;background:#edf0ff;color:var(--blue);font-size:11px;font-weight:700;padding:4px 10px;border-radius:30px;margin-bottom:8px}
+    .team-member p{font-size:12px;color:var(--muted);margin:0;line-height:1.75}
+    .team-inspect-btn{border:1px solid var(--line);background:#f7f8fc;color:var(--ink);border-radius:10px;padding:7px 12px;font-size:11.5px;font-weight:700;width:100%}
+    .team-inspect-btn:hover{border-color:#9eabf4;background:#f0f3ff;color:var(--blue)}
+
+    .deliverables-box{margin-top:34px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}
+    .deliverables-head{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+    .deliverables-head h3{font-size:19px;margin:0}
+    .deliverables-head span{font-size:12px;color:var(--muted)}
+    .deliverables-table-wrap{overflow-x:auto}
+    .deliverables-table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:780px}
+    .deliverables-table th,.deliverables-table td{border-bottom:1px solid var(--line);padding:12px 10px;text-align:right;vertical-align:top}
+    .deliverables-table th{background:#f7f9ff;color:var(--ink);font-weight:800}
+    .deliverables-table td{color:#4e5a72;line-height:1.75}
+    .asset-link{color:var(--blue);font-weight:700;font-size:11.5px;display:inline-block;margin-top:4px;text-decoration:underline;background:none;border:0;padding:0}
+
+    .dialog-list{color:var(--muted);font-size:13px;line-height:2;padding-right:18px;margin:8px 0 14px}
+    .dialog-link-card{background:#f7f8fc;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px;font-size:12px}
+    .dialog-link-card code{display:block;margin-top:4px;color:#304bd0;font-family:monospace;word-break:break-all}
+
+    @media(max-width:950px){.phrase-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:680px){.guide-grid,.phrase-grid,.path-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="إشارة - الصفحة الرئيسية">
+      <span class="brand-mark" aria-hidden="true">إ</span>
+      <span>إشارة<span class="brand-dot">.</span></span>
+    </a>
+    <nav class="main-nav" aria-label="القائمة الرئيسية">
+      <a href="#home" class="nav-link active">الرئيسية</a>
+      <a href="#lessons" class="nav-link">تعلم الإشارة</a>
+      <a href="#phrases" class="nav-link">عبارات سريعة</a>
+      <a href="#guide" class="nav-link">إرشادات</a>
+      <a href="#practice" class="nav-link">تدرّب</a>
+      <a href="#team" class="nav-link">فريق المشروع</a>
+      <a href="#about" class="nav-link">عن المنصة</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="fontToggle" type="button" aria-label="تكبير حجم النص" title="تكبير النص">A+</button>
+      <button class="icon-button" id="contrastToggle" type="button" aria-label="تفعيل التباين العالي" title="تباين أعلى">◐</button>
+      <a class="header-cta" href="#lessons">ابدأ التعلم <span aria-hidden="true">←</span></a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> التعلّم حق للجميع</span>
+        <h1>لغة جديدة،<br><span>وتواصل بلا حدود.</span></h1>
+        <p class="hero-lead">اكتشف أساسيات لغة الإشارة المصرية من خلال دروس مرئية واضحة، وعبارات سريعة، وتدريبات بسيطة تساعدك على التواصل بثقة.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#lessons">ابدأ أول درس <span aria-hidden="true">←</span></a>
+          <a class="button button-quiet" href="#phrases">عبارات سريعة</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-icon" aria-hidden="true">✋</div>
+          <div><strong>التعلّم بالصورة والحركة</strong><small>محتوى مرئي ونصوص واضحة</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="رسم توضيحي ليد ترمز للتواصل بلغة الإشارة">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card art-card-top"><span class="mini-symbol">أ</span><span>الحروف</span></div>
+        <div class="hand-illustration" aria-hidden="true">🤟</div>
+        <div class="art-card art-card-bottom"><span class="mini-symbol">💬</span><span>تواصل</span></div>
+        <span class="spark spark-one">✦</span><span class="spark spark-two">✳</span>
+      </div>
+    </section>
+
+    <section class="stats section-wrap" aria-label="مميزات المنصة">
+      <div class="stat"><strong>مرئي</strong><span>التعلّم يعتمد على الصورة والحركة</span></div>
+      <div class="stat"><strong>بسيط</strong><span>شرح مباشر وخطوات قصيرة</span></div>
+      <div class="stat"><strong>تفاعلي</strong><span>تدرّب واختبر فهمك</span></div>
+    </section>
+
+    <section class="section-wrap lessons-section" id="lessons">
+      <div class="section-heading">
+        <div><span class="eyebrow">ابدأ من هنا</span><h2>تعلّم لغة الإشارة</h2><p>اختر موضوعًا، وتعلّم خطوة بخطوة.</p></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="lessonSearch" type="search" placeholder="ابحث عن درس..." aria-label="ابحث عن درس"></label>
+      </div>
+      <div class="filter-row" role="group" aria-label="تصفية الدروس">
+        <button class="filter-chip selected" data-filter="all">كل الدروس</button>
+        <button class="filter-chip" data-filter="basics">أساسيات</button>
+        <button class="filter-chip" data-filter="daily">تواصل يومي</button>
+        <button class="filter-chip" data-filter="school">في المدرسة</button>
+        <button class="filter-chip" data-filter="numbers">الأرقام</button>
+        <button class="filter-chip" data-filter="family">الأسرة</button>
+      </div>
+      <div class="lesson-grid" id="lessonGrid">
+        <article class="lesson-card" data-category="basics" data-title="الحروف الأبجدية">
+          <div class="lesson-visual visual-lilac"><span class="visual-tag">أساسيات</span><span class="visual-letter">أ ب ت</span><span class="visual-hand">✋</span></div>
+          <div class="lesson-info"><span class="lesson-meta">درس 01 · 5 دقائق</span><h3>الحروف الأبجدية</h3><p>تعرّف على الحروف العربية وكيفية تمثيلها بالإشارة.</p><button class="text-link lesson-open" data-lesson="letters">استكشف الدرس <span>←</span></button></div>
+        </article>
+        <article class="lesson-card" data-category="daily" data-title="التحية والتعارف">
+          <div class="lesson-visual visual-peach"><span class="visual-tag">تواصل يومي</span><span class="visual-letter">أهلًا!</span><span class="visual-hand">👋</span></div>
+          <div class="lesson-info"><span class="lesson-meta">درس 02 · 4 دقائق</span><h3>التحية والتعارف</h3><p>عبارات البداية: مرحبًا، شكرًا، من فضلك.</p><button class="text-link lesson-open" data-lesson="greetings">استكشف الدرس <span>←</span></button></div>
+        </article>
+        <article class="lesson-card" data-category="school" data-title="كلمات في المدرسة">
+          <div class="lesson-visual visual-mint"><span class="visual-tag">في المدرسة</span><span class="visual-letter">مدرستي</span><span class="visual-hand">📚</span></div>
+          <div class="lesson-info"><span class="lesson-meta">درس 03 · 6 دقائق</span><h3>كلمات في المدرسة</h3><p>مفردات تساعد على التواصل داخل الفصل.</p><button class="text-link lesson-open" data-lesson="school">استكشف الدرس <span>←</span></button></div>
+        </article>
+        <article class="lesson-card" data-category="numbers" data-title="الأرقام والعد">
+          <div class="lesson-visual visual-sky"><span class="visual-tag">الأرقام</span><span class="visual-letter">١ ٢ ٣</span><span class="visual-hand">🔢</span></div>
+          <div class="lesson-info"><span class="lesson-meta">درس 04 · 5 دقائق</span><h3>الأرقام والعد</h3><p>تعلّم قراءة واستخدام الأرقام اليومية في المواقف البسيطة.</p><button class="text-link lesson-open" data-lesson="numbers">استكشف الدرس <span>←</span></button></div>
+        </article>
+        <article class="lesson-card" data-category="family" data-title="الأسرة والأشخاص">
+          <div class="lesson-visual visual-rose"><span class="visual-tag">الأسرة</span><span class="visual-letter">أسرتي</span><span class="visual-hand">🏡</span></div>
+          <div class="lesson-info"><span class="lesson-meta">درس 05 · 5 دقائق</span><h3>الأسرة والأشخاص</h3><p>مفردات للتعريف بأفراد الأسرة والأصدقاء بوضوح.</p><button class="text-link lesson-open" data-lesson="family">استكشف الدرس <span>←</span></button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>لا توجد دروس مطابقة. جرّب كلمة بحث أخرى.</p>
+    </section>
+
+    <section class="section-wrap phrases-section" id="phrases">
+      <div class="section-heading">
+        <div><span class="eyebrow">قاموس سريع</span><h2>عبارات تحتاجها يوميًا</h2><p>بطاقات سريعة لمواقف شائعة يمكنك فتح خطواتها مباشرة.</p></div>
+      </div>
+      <div class="phrase-grid">
+        <article class="phrase-card">
+          <div>
+            <div class="phrase-top"><span class="phrase-emoji">🙏</span><span class="phrase-tag">تواصل يومي</span></div>
+            <h3>شكرًا لك</h3>
+            <p>تعبير أساسي للامتنان مع ابتسامة وتواصل بصري واضح.</p>
+          </div>
+          <button class="text-link lesson-open" data-lesson="greetings">عرض خطوات الدرس <span>←</span></button>
+        </article>
+        <article class="phrase-card">
+          <div>
+            <div class="phrase-top"><span class="phrase-emoji">🙋</span><span class="phrase-tag">في المدرسة</span></div>
+            <h3>أحتاج مساعدة</h3>
+            <p>مفيدة داخل الفصل أو أثناء شرح معلومة جديدة.</p>
+          </div>
+          <button class="text-link lesson-open" data-lesson="school">عرض خطوات الدرس <span>←</span></button>
+        </article>
+        <article class="phrase-card">
+          <div>
+            <div class="phrase-top"><span class="phrase-emoji">✅</span><span class="phrase-tag">أساسيات</span></div>
+            <h3>فهمت الفكرة</h3>
+            <p>تأكيد بصري يساعد على استمرار الحوار بسلاسة.</p>
+          </div>
+          <button class="text-link lesson-open" data-lesson="letters">عرض خطوات الدرس <span>←</span></button>
+        </article>
+        <article class="phrase-card">
+          <div>
+            <div class="phrase-top"><span class="phrase-emoji">🔢</span><span class="phrase-tag">الأرقام</span></div>
+            <h3>الرقم أو الكمية</h3>
+            <p>استخدام الأرقام بوضوح عند ذكر عدد أو ترتيب.</p>
+          </div>
+          <button class="text-link lesson-open" data-lesson="numbers">عرض خطوات الدرس <span>←</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap quick-guide" id="guide">
+      <div class="section-heading">
+        <div><span class="eyebrow">معلومة مهمة</span><h2>كيف تتواصل باحترام؟</h2><p>إرشادات بسيطة تساعدك على التواصل بشكل أفضل مع الأشخاص الصم وضعاف السمع.</p></div>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card"><span class="guide-number">01</span><div class="guide-icon">👀</div><h3>حافظ على التواصل البصري</h3><p>انظر إلى الشخص أثناء الحديث معه، وتجنب التحدث وأنت تنظر بعيدًا.</p></article>
+        <article class="guide-card"><span class="guide-number">02</span><div class="guide-icon">💬</div><h3>استخدم جملًا واضحة</h3><p>تحدث بطريقة طبيعية وبجمل قصيرة، واكتب الفكرة إذا احتاج الأمر.</p></article>
+        <article class="guide-card"><span class="guide-number">03</span><div class="guide-icon">🤝</div><h3>اسأل عن الطريقة المناسبة</h3><p>طرق التواصل تختلف من شخص لآخر؛ اسأل الشخص عن الطريقة التي يفضلها.</p></article>
+      </div>
+      <div class="fact-strip"><span class="fact-symbol">✦</span><p><strong>تذكّر:</strong> لا تفترض أن جميع الأشخاص الصم يستخدمون لغة الإشارة بالطريقة نفسها؛ احترم تفضيلات كل شخص.</p></div>
+
+      <div class="path-grid">
+        <div class="path-step">
+          <span class="path-badge">الخطوة 1</span>
+          <h3>اختر موضوعًا واحدًا</h3>
+          <p>ابدأ بالحروف أو التحيات اليومية حتى لا تتشتت بكثرة المفردات في جلسة واحدة.</p>
+        </div>
+        <div class="path-step">
+          <span class="path-badge">الخطوة 2</span>
+          <h3>راقب التفاصيل البصرية</h3>
+          <p>انتبه لاتجاه الحركة وحركة اليد وتعبيرات الوجه المرافقة للمعنى.</p>
+        </div>
+        <div class="path-step">
+          <span class="path-badge">الخطوة 3</span>
+          <h3>اختبر نفسك سريعًا</h3>
+          <p>استخدم التدريب التفاعلي بالأسفل لترسيخ قواعد التواصل الصحيح.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice-band" id="practice">
+      <div class="section-wrap practice-inner">
+        <div><span class="eyebrow eyebrow-light">اختبر ما تعلمته</span><h2>خطوة صغيرة،<br>وتقدّم كبير.</h2><p>بعد كل درس، جرّب سؤالًا سريعًا لتتأكد من فهمك.</p></div>
+        <div class="quiz-card">
+          <div class="quiz-top"><span>تدريب سريع</span><span class="quiz-count" id="quizCount">1 / 5</span></div>
+          <h3 id="quizQuestion">أي وسيلة تجعل محتوى الفيديو أوضح للصم وضعاف السمع؟</h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+          <div class="quiz-meta-row">
+            <span id="quizScore">الإجابات الصحيحة: 0</span>
+          </div>
+          <div class="quiz-actions">
+            <button class="quiz-next" id="quizNext" hidden>السؤال التالي ←</button>
+            <button class="quiz-reset" id="quizReset" type="button">إعادة البدء</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section" id="team">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">تقسيم العمل والتقييم (5 أعضاء)</span>
+            <h2>فريق المشروع ومخرجات كل عضو</h2>
+            <p>تقسيم واضح يغطي النصوص، المحتوى التعليمي، العناصر البصرية/الصور، ومقاطع الفيديو التوضيحية، والتطوير البرمجي والاختبار مع روابط جاهزة للمراجعة والتسليم.</p>
+          </div>
+        </div>
+
+        <div class="team-grid" id="teamGrid" aria-label="أعضاء فريق المشروع"></div>
+
+        <div class="deliverables-box" id="deliverables">
+          <div class="deliverables-head">
+            <h3>جدول تفصيلي لمخرجات كل عضو (نصوص · محتوى · صور · فيديو · تطوير)</h3>
+            <span>اضغط على أي عضو بالبطاقات أو من الجدول لعرض تفاصيل المخرجات وروابط المعاينة</span>
+          </div>
+          <div class="deliverables-table-wrap">
+            <table class="deliverables-table">
+              <thead>
+                <tr>
+                  <th>العضو</th>
+                  <th>المحور الأساسي</th>
+                  <th>النصوص والمحتوى التعليمي</th>
+                  <th>الصور والعناصر البصرية</th>
+                  <th>الفيديو والروابط النموذجية</th>
+                </tr>
+              </thead>
+              <tbody id="deliverablesBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="about-mark" aria-hidden="true">إ</div>
+      <div><span class="eyebrow">عن إشارة</span><h2>التواصل يبدأ بالفهم.</h2><p>إشارة نموذج تعليمي يهدف إلى تسهيل الوصول إلى أساسيات لغة الإشارة المصرية للطلاب، من خلال محتوى بصري منظم وتجربة استخدام تراعي اختلاف طرق التعلّم.</p><p class="important-note"><strong>ملاحظة تعليمية:</strong> يجب مراجعة كل حركة إشارة مع مختص أو مصدر موثوق في لغة الإشارة المصرية قبل نشرها. الصور الرمزية والروابط التجريبية في هذه النسخة توضيحية وجاهزة لاستبدالها بالمواد المعتمدة نهائيًا.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark">إ</span><span>إشارة<span class="brand-dot">.</span></span></a><p>التعلّم المرئي يفتح أبوابًا جديدة للتواصل.</p><span>© 2026 إشارة - مشروع تعليمي</span></footer>
+
+  <dialog id="lessonDialog" class="lesson-dialog">
+    <div class="dialog-head"><span class="eyebrow" id="dialogEyebrow">مساحة التعلّم</span><button class="dialog-close" id="dialogClose" aria-label="إغلاق">×</button></div>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <script>
+    const lessons = {
+      letters: {
+        title:"الحروف الأبجدية",
+        intro:"تعرّف على الحروف العربية، وابدأ بحرف واحد في كل مرة. في النسخة النهائية نربط الدرس بمقطع مرئي يوضح أداء كل حرف بلغة الإشارة المصرية.",
+        symbol:"أ ب ت",
+        videoLink:"https://example.org/ishara/media/video-letters-egsl.mp4",
+        imageRef:"https://example.org/ishara/assets/letters-chart-preview.png",
+        steps:["شاهد أداء الإشارة من الفيديو المعتمد.","لاحظ اتجاه اليد وشكل الأصابع ومكان الحركة.","حاول تقليد الحركة أمام مرآة، ثم راجع الفيديو."]
+      },
+      greetings: {
+        title:"التحية والتعارف",
+        intro:"تعلّم عبارات يومية تساعدك على بدء محادثة مهذبة وواضحة مثل الترحيب والشكر وطلب المساعدة بلطف.",
+        symbol:"👋",
+        videoLink:"https://example.org/ishara/media/video-greetings-egsl.mp4",
+        imageRef:"https://example.org/ishara/assets/greetings-cards-preview.png",
+        steps:["ابدأ بعبارة ترحيب مناسبة.","استخدم تعبيرات الوجه الطبيعية المصاحبة للإشارة.","احرص على التواصل البصري باحترام."]
+      },
+      school: {
+        title:"كلمات في المدرسة",
+        intro:"مفردات مرتبطة بالمدرسة والفصل والأدوات الدراسية وطلب المساعدة داخل البيئة التعليمية.",
+        symbol:"📚",
+        videoLink:"https://example.org/ishara/media/video-school-egsl.mp4",
+        imageRef:"https://example.org/ishara/assets/school-vocab-preview.png",
+        steps:["اختر المفردة التي تريد تعلمها.","شاهد الإشارة الصحيحة من مصدر موثوق.","استخدم المفردة في جملة أو موقف مدرسي."]
+      },
+      numbers: {
+        title:"الأرقام والعد",
+        intro:"تعلّم الأرقام الأساسية لمساعدتك في المواقف اليومية والحسابية البسيطة وتحديد الكميات.",
+        symbol:"١ ٢ ٣",
+        videoLink:"https://example.org/ishara/media/video-numbers-egsl.mp4",
+        imageRef:"https://example.org/ishara/assets/numbers-guide-preview.png",
+        steps:["ابدأ بالأرقام من ١ إلى ٥ ثم انتقل للأكبر تدريجيًا.","انتبه لوضعية راحة اليد واتجاه الأصابع.","تدرب على ربط الرقم بموقف واقعي."]
+      },
+      family: {
+        title:"الأسرة والأشخاص",
+        intro:"مفردات تساعدك على الحديث عن أفراد الأسرة والمحيطين بك بوضوح داخل جمل قصيرة.",
+        symbol:"🏡",
+        videoLink:"https://example.org/ishara/media/video-family-egsl.mp4",
+        imageRef:"https://example.org/ishara/assets/family-signs-preview.png",
+        steps:["تعرّف على إشارة كل فرد من أفراد الأسرة.","اربط الإشارة بسياق جملة قصيرة وواضحة.","راجع الأداء مع مصدر موثوق للتأكد من الدقة."]
+      }
+    };
+
+    const dialog = document.getElementById('lessonDialog');
+    const dialogContent = document.getElementById('dialogContent');
+    const dialogEyebrow = document.getElementById('dialogEyebrow');
+
+    document.querySelectorAll('.lesson-open').forEach(button => button.addEventListener('click', () => {
+      const lesson = lessons[button.dataset.lesson];
+      dialogEyebrow.textContent = 'مساحة التعلّم';
+      dialogContent.innerHTML = `
+        <h2 class="dialog-title">${lesson.title}</h2>
+        <p class="dialog-copy">${lesson.intro}</p>
+        <div class="media-placeholder">
+          <strong>${lesson.symbol}</strong>
+          <span>مساحة مخصصة لفيديو لغة الإشارة المصرية المعتمد</span>
+          <div class="media-link-box">رابط الفيديو النموذجي: ${lesson.videoLink}</div>
+          <div class="media-link-box">مرجع الصورة التوضيحية: ${lesson.imageRef}</div>
+        </div>
+        <ol class="dialog-copy">${lesson.steps.map(step => `<li>${step}</li>`).join('')}</ol>
+        <p class="dialog-tip">تنبيه: لا تعتمد على الرمز أو الرسم وحده لتعلّم حركة الإشارة. يجب إدراج فيديو صحيح تمت مراجعته من مختص.</p>
+      `;
+      dialog.showModal();
+    }));
+
+    document.getElementById('dialogClose').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if(event.target === dialog) dialog.close(); });
+
+    const search = document.getElementById('lessonSearch');
+    const cards = [...document.querySelectorAll('.lesson-card')];
+    let activeFilter = 'all';
+    function filterLessons(){
+      const term = search.value.trim();
+      let visible = 0;
+      cards.forEach(card => {
+        const matchesText = card.dataset.title.includes(term);
+        const matchesFilter = activeFilter === 'all' || card.dataset.category === activeFilter;
+        card.hidden = !(matchesText && matchesFilter);
+        if(!card.hidden) visible++;
+      });
+      document.getElementById('emptyState').hidden = visible !== 0;
+    }
+    search.addEventListener('input', filterLessons);
+    document.querySelectorAll('.filter-chip').forEach(chip => chip.addEventListener('click', () => {
+      document.querySelector('.filter-chip.selected').classList.remove('selected');
+      chip.classList.add('selected'); activeFilter = chip.dataset.filter; filterLessons();
+    }));
+
+    const questions = [
+      {q:"أي وسيلة تجعل محتوى الفيديو أوضح للصم وضعاف السمع؟", options:["موسيقى خلفية أعلى","ترجمة نصية واضحة","تعليمات صوتية فقط"], answer:1, explain:"صحيح! الترجمة النصية تجعل الكلام والمعلومات الصوتية متاحة بصريًا."},
+      {q:"ما الأفضل عند شرح إشارة جديدة؟", options:["فيديو واضح يبيّن حركة اليد","صورة غير واضحة","شرح صوتي فقط"], answer:0, explain:"أحسنت! الفيديو الواضح يساعد على ملاحظة الحركة واتجاه اليد."},
+      {q:"ما الذي ينبغي فعله قبل نشر إشارة تعليمية؟", options:["تخمين الحركة","نسخ أي صورة من الإنترنت","مراجعتها مع مختص أو مصدر موثوق"], answer:2, explain:"إجابة ممتازة. دقة الإشارة مهمة، ويجب التحقق منها قبل استخدامها تعليميًا."},
+      {q:"ما أهمية التواصل البصري أثناء الحوار؟", options:["يساعد على الفهم والانتباه باحترام","غير مهم في لغة الإشارة","يُفضّل تجنبه"], answer:0, explain:"ممتاز! التواصل البصري المباشر أساس واضح ومريح للحوار."},
+      {q:"كيف تبدأ تعلّم مفردات جديدة بشكل منظم؟", options:["بحفظ عشرات الكلمات دفعة واحدة","بالبدء بموضوع واحد وخطوات قصيرة","بالاعتماد على التخمين"], answer:1, explain:"رائع! التدرج في موضوع واحد يجعل التعلّم أسهل وأكثر ثباتًا."}
+    ];
+    let questionIndex = 0;
+    let score = 0;
+    let answeredCurrent = false;
+
+    function updateScoreLabel(){
+      document.getElementById('quizScore').textContent = `الإجابات الصحيحة: ${score} من ${questions.length}`;
+    }
+
+    function renderQuestion(){
+      answeredCurrent = false;
+      const q = questions[questionIndex];
+      document.getElementById('quizCount').textContent = `${questionIndex+1} / ${questions.length}`;
+      document.getElementById('quizQuestion').textContent = q.q;
+      document.getElementById('quizFeedback').textContent = '';
+      document.getElementById('quizNext').hidden = true;
+      updateScoreLabel();
+      document.getElementById('quizOptions').innerHTML = q.options.map((option,i)=>`<button class="quiz-option" data-index="${i}">${option}</button>`).join('');
+      document.querySelectorAll('.quiz-option').forEach(option => option.addEventListener('click', () => {
+        if(answeredCurrent) return;
+        answeredCurrent = true;
+        const chosen = Number(option.dataset.index);
+        if(chosen === q.answer) score++;
+        updateScoreLabel();
+        document.querySelectorAll('.quiz-option').forEach((el,i)=>{el.disabled=true;if(i===q.answer)el.classList.add('correct');else if(i===chosen)el.classList.add('wrong');});
+        const isLast = questionIndex === questions.length - 1;
+        document.getElementById('quizFeedback').textContent = chosen===q.answer
+          ? `${q.explain}${isLast ? ` — أنهيت التدريب بنتيجة ${score}/${questions.length}.` : ''}`
+          : `ليست الإجابة الصحيحة. ${q.explain}${isLast ? ` — أنهيت التدريب بنتيجة ${score}/${questions.length}.` : ''}`;
+        document.getElementById('quizNext').hidden = false;
+        document.getElementById('quizNext').textContent = isLast ? 'إعادة التدريب ↺' : 'السؤال التالي ←';
+      }));
+    }
+
+    document.getElementById('quizNext').addEventListener('click',()=>{
+      if(questionIndex === questions.length - 1){
+        questionIndex = 0;
+        score = 0;
+      } else {
+        questionIndex++;
+      }
+      renderQuestion();
+    });
+
+    document.getElementById('quizReset').addEventListener('click',()=>{
+      questionIndex = 0;
+      score = 0;
+      renderQuestion();
+    });
+
+    renderQuestion();
+
+    document.getElementById('fontToggle').addEventListener('click',()=>{
+      document.body.classList.toggle('large-text');
+      const enabled = document.body.classList.contains('large-text');
+      document.getElementById('fontToggle').setAttribute('aria-label', enabled?'إرجاع حجم النص':'تكبير حجم النص');
+    });
+    document.getElementById('contrastToggle').addEventListener('click',()=>{
+      document.body.classList.toggle('high-contrast');
+      const enabled = document.body.classList.contains('high-contrast');
+      document.getElementById('contrastToggle').setAttribute('aria-pressed', String(enabled));
+    });
+    const menuToggle=document.getElementById('menuToggle');
+    menuToggle.addEventListener('click',()=>{
+      const nav=document.querySelector('.main-nav');
+      const open=nav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded',String(open));
+    });
+    document.querySelectorAll('.nav-link').forEach(link=>link.addEventListener('click',()=>{
+      document.querySelector('.main-nav').classList.remove('open');
+      menuToggle.setAttribute('aria-expanded','false');
+    }));
+
+    // ======================================================
+    // بيانات فريق المشروع وتقسيمة المهام (5 أعضاء)
+    // ======================================================
+    const projectTeam = [
+      {
+        id: "alaa",
+        name: "الاء فوزي عبدالرحمن",
+        role: "المحتوى النصي والإرشادات التعليمية",
+        summary: "صياغة النصوص التعريفية، وإرشادات التواصل المحترم، ومقدمة الدروس والملاحظات التوعوية.",
+        texts: [
+          "نصوص أقسام الرئيسية، الإرشادات الثلاث، وتنبيهات الدقة التعليمية.",
+          "صياغة بطاقات العبارات اليومية والخطوات الإرشادية للمتعلم."
+        ],
+        images: "اختيار الرموز والبطاقات اللونية المنسجمة مع النصوص التوعوية (مرجع: https://example.org/ishara/assets/alaa-guide-pack.png)",
+        video: "سيناريو وشرح نصي مصاحب لفيديو آداب التواصل البصري (رابط نموذجي: https://example.org/ishara/media/video-etiquette-script.mp4)",
+        defensePoints: [
+          "أوضحت أهمية الجمع بين النص الواضح والإرشاد البصري لتفادي سوء الفهم.",
+          "راعت أن تكون الجمل قصيرة وسهلة القراءة بمختلف أحجام الخط والتباين."
+        ]
+      },
+      {
+        id: "nour-sh",
+        name: "نور شهاب زين العابدين",
+        role: "المحتوى التعليمي والدروس والقاموس",
+        summary: "إعداد المناهج المصغرة للدروس الخمسة (الحروف، التحيات، المدرسة، الأرقام، الأسرة) وخطوات التطبيق.",
+        texts: [
+          "بناء خطوات الأداء في كل درس وكلمات القاموس السريع اليومي.",
+          "تنظيم تصنيفات الدروس (أساسيات، تواصل يومي، في المدرسة، الأرقام، الأسرة)."
+        ],
+        images: "تصميم البطاقات البصرية لكل درس ورمز العرض داخل النافذة المنبثقة (مرجع: https://example.org/ishara/assets/lessons-visual-set.png)",
+        video: "تحديد مشاهد الأداء المطلوبة لكل درس قبل المراجعة مع مختص (رابط نموذجي: https://example.org/ishara/media/video-lessons-storyboard.mp4)",
+        defensePoints: [
+          "قسّمت الدروس لمدد قصيرة (4 إلى 6 دقائق) لتقليل الحمل المعرفي على المبتدئ.",
+          "ربطت كل درس بخطوات عملية تبدأ بالملاحظة ثم المحاكاة ثم المراجعة."
+        ]
+      },
+      {
+        id: "nour-m",
+        name: "نور محمد علي",
+        role: "الاختبارات التفاعلية والصور والوسائط",
+        summary: "إعداد بنك الأسئلة التفاعلي وتفسيرات الإجابات، وتنسيق العناصر الرسومية والصور التوضيحية للواجهة.",
+        texts: [
+          "كتابة أسئلة التدريب الخمسة وخياراتها والتغذية الراجعة التوضيحية لكل إجابة.",
+          "صياغة رسائل التشجيع وعرض النتيجة النهائية بعد إتمام الاختبار."
+        ],
+        images: "تنظيم التكوين البصري للبطاقات، الأيقونات، ومعاينة الصور الرمزية (مرجع: https://example.org/ishara/assets/visual-media-gallery.png)",
+        video: "دمج شروحات توضيحية للفيديوهات داخل الاختبار وتوضيح أثر الترجمة النصية (رابط نموذجي: https://example.org/ishara/media/video-captions-demo.mp4)",
+        defensePoints: [
+          "صممت الأسئلة لتقيس الفهم العملي لأخلاقيات الإشارة وجودة المحتوى المرئي لا الحفظ فقط.",
+          "أضفت شرحًا فوريًا بعد كل إجابة لتصحيح الخطأ مباشرة أثناء التدريب."
+        ]
+      },
+      {
+        id: "arwa",
+        name: "أروى محمد عبد الناصر",
+        role: "العروض المرئية والفيديوهات والمراجعة البصرية",
+        summary: "إعداد خطة المقاطع المرئية، ومتابعة جودة عرض الفيديوهات والصور، ومراجعة تجربة الاستخدام والوصول.",
+        texts: [
+          "كتابة أوصاف المقاطع المرئية وتنبيهات التحقق من صحة الإشارات مع المختصين.",
+          "مراجعة وضوح العناوين والتسميات المرتبطة بالصور والفيديوهات داخل المنصة."
+        ],
+        images: "مراجعة تباين الصور والبطاقات واختبار العرض على الشاشات المختلفة (مرجع: https://example.org/ishara/assets/arwa-media-qa-sheet.png)",
+        video: "تجهيز روابط المقاطع النموذجية ومعايير وضوح حركة اليد والإضاءة (رابط نموذجي: https://example.org/ishara/media/video-egsl-showcase.mp4)",
+        defensePoints: [
+          "ركزت على معايير وضوح الفيديو مثل حركة اليد والترجمة النصية وتجنب المشتتات.",
+          "تابعت جاهزية الروابط والمحتوى المرئي لسهولة ربط الفيديوهات النهائية دون تعديل الهيكل."
+        ]
+      },
+      {
+        id: "karim",
+        name: "كريم محمود محمد",
+        role: "التطوير البرمجي والاختبار والتكامل التفاعلي",
+        summary: "بناء هيكل الصفحة والمنطق التفاعلي للبحث والفلترة والاختبار والنوافذ المنبثقة واختبار الأداء والاستجابة.",
+        texts: [
+          "ربط البيانات الديناميكية للدروس، الأسئلة، وفريق المشروع داخل واجهة متناسقة.",
+          "كتابة رسائل الحالة، التنبيهات، ودعم أوضاع إتاحة الوصول (تكبير الخط والتباين العالي)."
+        ],
+        images: "بناء مكونات العرض البصرية والبطاقات التفاعلية ونوافذ معاينة الوسائط (مرجع: https://example.org/ishara/assets/karim-ui-components.png)",
+        video: "تهيئة حاويات عرض الفيديو والروابط داخل نافذة الدرس وضمان التجاوب على الجوال والحاسوب (رابط نموذجي: https://example.org/ishara/media/video-player-integration.mp4)",
+        defensePoints: [
+          "نفذت البحث والفلترة والاختبار والنوافذ المنبثقة بدون إعادة تحميل الصفحة مع الحفاظ على سهولة التعديل.",
+          "اختبرت الواجهة على مقاسات الشاشات المختلفة ودعمت تكبير النص والتباين العالي."
+        ]
+      }
+    ];
+
+    const teamGrid = document.getElementById("teamGrid");
+    const deliverablesBody = document.getElementById("deliverablesBody");
+
+    function openMemberModal(member) {
+      dialogEyebrow.textContent = "تفاصيل دور العضو والمخرجات";
+      dialogContent.innerHTML = `
+        <h2 class="dialog-title">${escapeTeamText(member.name)}</h2>
+        <p class="dialog-copy"><strong>الدور:</strong> ${escapeTeamText(member.role)} — ${escapeTeamText(member.summary)}</p>
+        <h3 style="font-size:15px;margin:14px 0 6px;">النصوص والمحتوى التعليمي:</h3>
+        <ul class="dialog-list">${member.texts.map(item => `<li>${escapeTeamText(item)}</li>`).join("")}</ul>
+        <div class="dialog-link-card">
+          <strong>الصور والعناصر البصرية:</strong>
+          <code>${escapeTeamText(member.images)}</code>
+        </div>
+        <div class="dialog-link-card">
+          <strong>الفيديو والرابط النموذجي:</strong>
+          <code>${escapeTeamText(member.video)}</code>
+        </div>
+        <h3 style="font-size:15px;margin:16px 0 6px;">نقاط جاهزة للرد وقت التقييم والمناقشة:</h3>
+        <ul class="dialog-list">${member.defensePoints.map(pt => `<li>${escapeTeamText(pt)}</li>`).join("")}</ul>
+      `;
+      dialog.showModal();
+    }
+
+    if (teamGrid) {
+      teamGrid.innerHTML = projectTeam.map((member, index) => {
+        const initial = member.name.trim().charAt(0) || String(index + 1);
+        return `
+          <article class="team-member">
+            <div>
+              <div class="team-avatar" aria-hidden="true">${escapeTeamText(initial)}</div>
+              <h3>${escapeTeamText(member.name)}</h3>
+              <span class="team-role-pill">${escapeTeamText(member.role)}</span>
+              <p>${escapeTeamText(member.summary)}</p>
+            </div>
+            <button type="button" class="team-inspect-btn" data-member-id="${escapeTeamText(member.id)}">تفاصيل الشغل والروابط ←</button>
+          </article>
+        `;
+      }).join("");
+
+      teamGrid.querySelectorAll(".team-inspect-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const found = projectTeam.find(m => m.id === btn.dataset.memberId);
+          if (found) openMemberModal(found);
+        });
+      });
+    }
+
+    if (deliverablesBody) {
+      deliverablesBody.innerHTML = projectTeam.map(member => `
+        <tr>
+          <td><strong>${escapeTeamText(member.name)}</strong></td>
+          <td>${escapeTeamText(member.role)}</td>
+          <td>${member.texts.map(t => `• ${escapeTeamText(t)}`).join("<br>")}</td>
+          <td>${escapeTeamText(member.images)}</td>
+          <td>${escapeTeamText(member.video)}<br><button type="button" class="asset-link" data-member-id="${escapeTeamText(member.id)}">عرض نقاط التقييم</button></td>
+        </tr>
+      `).join("");
+
+      deliverablesBody.querySelectorAll(".asset-link").forEach(linkBtn => {
+        linkBtn.addEventListener("click", () => {
+          const found = projectTeam.find(m => m.id === linkBtn.dataset.memberId);
+          if (found) openMemberModal(found);
+        });
+      });
+    }
+
+    function escapeTeamText(value) {
+      return String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[char]));
+    }
+  </script>
+</body>
+</html>
